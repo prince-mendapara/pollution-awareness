@@ -1,11 +1,8 @@
 import 'assets/styles/app.scss';
+import Home from 'features/home/container/home';
 
-function App() {
-	return (
-		<div className='App'>
-			<p>Pollution Awareness</p>
-		</div>
-	);
-}
+const App: React.FC = () => {
+	return <Home />;
+};
 
 export default App;

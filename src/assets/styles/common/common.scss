@@ -66,6 +66,10 @@
 	@include marginTop(0);
 }
 
+.mt--20 {
+	@include marginTop(20px);
+}
+
 .mt--auto {
 	@include marginTop(auto);
 }
@@ -80,6 +84,14 @@
 
 .mb--0 {
 	@include marginBottom(0);
+}
+
+.mb--10 {
+	@include marginBottom(10px);
+}
+
+.mb--20 {
+	@include marginBottom(20px);
 }
 
 .mb--auto {
@@ -478,10 +490,6 @@
 
 .text--black {
 	color: $black;
-}
-
-.text--yellow {
-	color: $dark-yellow;
 }
 
 .bg--white {
