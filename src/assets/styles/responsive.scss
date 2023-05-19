@@ -1,0 +1,2356 @@
+@media screen and (max-width: 1600px) {
+
+	// page wrapper
+	.page-wrapper {
+		@include padding(25px 45px);
+		min-height: calc(100vh - 268px);
+	}
+
+	// home screen
+	.landingpage-wrapper {
+		.text-wrapper {
+			.text-highlight {
+				.title {
+					font-size: 4.375rem;
+				}
+			}
+		}
+	}
+
+	// header section
+	.header {
+		.tab-header {
+			.tab-menu__wrapper {
+				.tab-menu {
+					@include padding(0 15px);
+					font-size: $font-size-sm;
+				}
+
+				.tab-sub_menu__wrapper {
+					@include padding(0 15px);
+
+					.tab-sub_menu {
+						font-size: $font-size-sm;
+					}
+				}
+			}
+		}
+	}
+
+	// filter section
+	.filter-wrapper {
+		padding: 25px;
+
+		.filter-items {
+			width: 280px;
+			margin-right: 30px;
+
+			.filter-input {
+				height: 50px;
+			}
+
+			.select-field {
+				height: 50px;
+			}
+
+			.filter-title {
+				font-size: 20px;
+			}
+		}
+
+		.filter-arrow {
+			height: 44px;
+			width: 44px;
+		}
+
+		.filter {
+			font-size: $font-size-sm;
+		}
+	}
+
+	//table
+	.table {
+		.table-head {
+			.table-row {
+				.table-cell__header {
+					.table-cell-info {
+						font-size: $font-size-sm;
+						line-height: 17px;
+					}
+				}
+			}
+		}
+
+		.table-body {
+			.table-row {
+				height: 100px;
+
+				.table-cell {
+					.table-cell-info {
+						font-size: $font-size-sm;
+						line-height: 17px;
+					}
+
+					.highlight-clip {
+						font-size: $font-size-xxl;
+					}
+
+					&.pinned {
+						.pinned-box {
+							height: 100px;
+
+							.pinned-box--text {
+								height: 100px;
+							}
+						}
+					}
+				}
+
+				.hr {
+					height: 60px;
+				}
+
+				.color-line {
+					height: 60px;
+				}
+
+				.profile-actions,
+				.profile-collapse {
+					min-width: 38px;
+					width: 38px;
+					height: 38px;
+
+					.icon {
+						width: 13px;
+					}
+
+					.pin--icon {
+						width: 20px;
+					}
+
+					.menu--icon {
+						width: 5px;
+					}
+
+					.mail--icon {
+						width: 16px;
+					}
+
+					.hand--icon {
+						width: 25px;
+					}
+				}
+
+				.player-image {
+					width: 38px;
+					height: 38px;
+
+					&.big {
+						width: 52px;
+						height: 52px;
+					}
+				}
+
+				.rank-badge {
+					.icon {
+						width: 50px;
+					}
+				}
+			}
+
+			.player-expand__wrapper {
+				.player-expand {
+
+					.iga-score,
+					.prod-score {
+						@include padding(5px 20px 20px);
+
+						.progress-bar__wrapper {
+							@include marginTop(15px);
+						}
+
+						.score-title {
+							font-size: 1.375rem;
+							@include marginBottom(10px);
+						}
+
+						.hexagon-wrapper {
+							.icon {
+								width: 50px;
+								height: 50px;
+							}
+
+							.text {
+								font-size: 1.375rem;
+							}
+						}
+
+						.progress-bar__wrapper {
+							.progress-info {
+								.title {
+									font-size: $font-size-sm;
+								}
+
+								.score {
+									font-size: $font-size-browser-default;
+								}
+							}
+						}
+					}
+
+					.ra-score {
+						width: calc(20% - 30px);
+						@include margin(0 20px);
+						@include padding(10px 15px 20px);
+
+						.title {
+							font-size: $font-size-browser-default;
+						}
+
+						.score {
+							width: 38px;
+							height: 38px;
+						}
+
+						.frame {
+							.frame-item {
+								width: 70px;
+							}
+						}
+
+						.compare-title {
+							font-size: $font-size-browser-default;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.select-box {
+		margin-right: 30px;
+	}
+
+	// modal
+	.modal {
+		&.player-compare {
+			.modal__body {
+				.player-info {
+					.score {
+						font-size: 2.1875rem;
+						line-height: 50px;
+					}
+
+					.igascore-title {
+						font-size: 1.375rem;
+					}
+
+					.player-name {
+						font-size: 1.8125;
+					}
+
+					.player-position {
+						font-size: 1.8125;
+					}
+				}
+
+				.comparison-details {
+					.comparison-items {
+						.compare-number {
+							font-size: $font-size-xxl;
+						}
+
+						.player-title {
+							font-size: $font-size-xxl;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// player profile
+	.player-profile__section {
+		.personal-section {
+			.info-wrapper {
+				@include marginBottom(45px);
+
+				.score,
+				.recruited,
+				.player-tag,
+				.team-grade,
+				.player-id {
+					&-title {
+						font-size: 1.375rem;
+					}
+				}
+
+				.player-avatar {
+					width: 250px;
+					height: 250px;
+				}
+
+				.player-name {
+					font-size: 2.5rem;
+				}
+
+				.bio {
+					.bio-field {
+						.bio-value {
+							font-size: 1.375rem;
+						}
+					}
+				}
+			}
+
+			.action-wrapper {
+				.actions {
+					.action-item {
+						width: 44px;
+						height: 44px;
+					}
+				}
+			}
+		}
+
+		.left-section {
+			.ranking-section {
+				.rank-wrapper {
+					.rank-item {
+						.rank-badge {
+							width: 75px;
+						}
+
+						.title {
+							.state {
+								font-size: 1.375rem;
+							}
+						}
+					}
+				}
+			}
+
+			.big-scores-section {
+				.progress-item {
+					.progress-bar__wrapper {
+						.progress-info {
+							.score {
+								font-size: 1.4375rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// card
+	.card {
+		.label {
+			font-size: $font-size-sm;
+		}
+
+		&.shortlist-player {
+			.info {
+				.info-title {
+					font-size: 0.6875rem;
+				}
+
+				.info-name {
+					font-size: $font-size-browser-default;
+				}
+			}
+		}
+
+		.player-name {
+			font-size: $font-size-xxl;
+		}
+
+		.player-position {
+			font-size: $font-size-xxl;
+		}
+
+		.player-profile {
+			height: 44px;
+			width: 44px;
+		}
+	}
+
+	// round icon
+	.round-icon {
+		&.action-icon {
+			height: 44px;
+			width: 44px;
+		}
+	}
+
+	// recruiting-dashboard
+	.search-dashboard {
+		align-items: flex-end;
+
+		.searchbar {
+			.searchbar-field {
+				width: 300px;
+			}
+		}
+	}
+
+	// player selection section
+	.player-selection {
+		.players-deck {
+			.player-drag-card {
+				.player-image {
+					width: 34px;
+					min-width: 34px;
+					height: 34px;
+				}
+
+				.info {
+					font-size: $font-size-sm;
+				}
+			}
+		}
+	}
+
+	// multi player comparison
+	.compare-fame {
+		width: calc(100% - 30px);
+
+		.compare-profile {
+			.player-name {
+				font-size: $font-size-browser-default;
+			}
+
+			.player-position {
+				font-size: $font-size-browser-default;
+			}
+		}
+	}
+
+	// admin player expand
+	.section-expand {
+		.expand-title {
+			font-size: $font-size-xxl;
+		}
+	}
+
+	.admin-player-expand {
+		.bio-field {
+			.bio-value {
+				font-size: $font-size-lg;
+			}
+		}
+	}
+
+	.app-link {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+
+	// page wrapper
+	.page-wrapper {
+		@include padding(20px 40px);
+		min-height: calc(100vh - 228px);
+
+		.short-list--wrapper {
+			@include margin(0 8px);
+		}
+
+		.page-title {
+			font-size: 1.5rem;
+		}
+	}
+
+	// login page
+	.login {
+		.logo-wrapper {
+			margin-bottom: 40px;
+
+			.logo-item {
+				width: 200px;
+			}
+		}
+
+		.form {
+			.form-item {
+				.input-field {
+					min-height: 60px;
+				}
+
+				.password-icon {
+					top: 16px;
+				}
+			}
+
+			.checkbox {
+				margin-bottom: 40px;
+			}
+
+			.login-btn {
+				min-height: 60px;
+			}
+		}
+	}
+
+	// home screen
+	.landingpage-wrapper {
+		.langing-page_header {
+			.logo-image {
+				width: 200px;
+			}
+		}
+
+		.text-wrapper {
+			.text-highlight {
+				.title {
+					font-size: 3.75rem;
+				}
+			}
+		}
+
+		.feature-wrapper {
+			.feature-list_item {
+				font-size: $font-size-lg;
+			}
+		}
+	}
+
+	// header section
+	.header {
+		.tab-header {
+			.tab-menu__wrapper {
+				.tab-menu {
+					height: 40px;
+				}
+
+				.tab-sub_menu__wrapper {
+					top: 50px;
+				}
+			}
+		}
+	}
+
+	// footer section
+	.footer {
+		bottom: 0;
+		height: 100px;
+
+		.title {
+			@include marginRight(35px);
+		}
+
+		.footer-logo-wrapper {
+			@include marginRight(20px);
+		}
+
+		.logo {
+			height: 45px;
+			min-height: 45px;
+		}
+	}
+
+	// sidebar
+	.sidebar {
+		.sidebar-menu {
+			.sidebar-list {
+				font-size: $font-size-xxl;
+			}
+		}
+
+		.logout-btn {
+			height: 60px;
+			width: 200px;
+		}
+	}
+
+	// searchbar
+	.searchbar {
+		.searchbar-label {
+			font-size: 1.5rem;
+			margin-right: 20px;
+		}
+
+		.searchbar-field {
+			width: 300px;
+
+			.search--icon {
+				&.search-top {
+					top: 50px;
+				}
+			}
+
+			.searchbar-input {
+				height: 45px;
+			}
+		}
+	}
+
+	// select field
+	.select-field_wrapper {
+		.select-field {
+			height: 50px;
+		}
+	}
+
+	// input field
+	.input-field_wrapper {
+		.input-field {
+			min-height: 50px;
+		}
+
+		// telephone field
+		.react-tel-input {
+			.form-control {
+				min-height: 50px;
+			}
+		}
+	}
+
+	// phone input field
+	.phone-field_wrapper {
+
+		.PhoneInputInput,
+		.PhoneInputCountry {
+			min-height: 50px;
+		}
+
+	}
+
+	// document field
+	.document-field_wrapper {
+		.document-field {
+			min-height: 50px;
+		}
+	}
+
+	// teaxt area field
+	.text-area_wrapper {
+		.text-area {
+			min-height: 80px;
+		}
+	}
+
+	// btn
+	.btn {
+		height: 45px;
+
+		&.with-select-dropdown {
+			height: 50px;
+		}
+	}
+
+	// conversion unit
+	.conversion-unit_wrapper {
+		.conversion-unit {
+			height: 43px;
+			width: 130px;
+		}
+	}
+
+	// filter section
+	.filter-wrapper {
+		@include padding(20px);
+
+		.filter-title {
+			font-size: $font-size-browser-default;
+		}
+
+		.filter-items {
+			.range-slider-wrapper {
+				top: 75px;
+			}
+		}
+
+		.input-title {
+			font-size: $font-size-sm;
+		}
+
+		.score-title {
+			.input-title {
+				font-size: $font-size-sm;
+			}
+		}
+
+		.filter-text {
+			font-size: $font-size-lg;
+		}
+
+		.filter-arrow {
+			height: 32px;
+			width: 32px;
+		}
+
+		.filter {
+			font-size: $font-size-xs;
+		}
+	}
+
+	// collapse box
+	.collapse-box-wrapper {
+		.collapse-arrow {
+			width: 38px;
+			min-width: 38px;
+			height: 38px;
+		}
+
+		.collapse-title {
+			font-size: $font-size-xxl;
+		}
+	}
+
+	// table
+	.table {
+		.table-head {
+			.table-row {
+				.table-cell__header {
+					font-size: $font-size-sm;
+					line-height: 17px;
+				}
+			}
+		}
+
+		.table-body {
+			.table-row {
+				.table-cell {
+					.table-cell-info {
+						font-size: $font-size-xxs;
+					}
+
+					&.pinned {
+						.pinned-box {
+							.pinned-box--text {
+								.text {
+									font-size: $font-size-lg;
+								}
+							}
+						}
+					}
+
+					.highlight-clip {
+						font-size: $font-size-browser-default;
+					}
+				}
+
+				.hr {
+					height: 60px;
+				}
+
+				.profile-actions,
+				.profile-collapse {
+					min-width: 32px;
+					width: 32px;
+					height: 32px;
+
+					.icon {
+						width: 10px;
+					}
+
+					.pin--icon {
+						width: 16px;
+					}
+
+					.menu--icon {
+						width: 4px;
+					}
+
+					.hand--icon {
+						width: 20px;
+					}
+				}
+
+				.player-image {
+					width: 32px;
+					height: 32px;
+					@include marginRight(10px);
+
+					&.big {
+						width: 40px;
+						height: 40px;
+
+						&.extend {
+							p {
+								font-size: $font-size-lg;
+							}
+
+							.pin-plus-icon {
+								height: 12px;
+							}
+						}
+					}
+				}
+
+				.rank-badge {
+					.icon {
+						width: 40px;
+					}
+				}
+
+				.actions--menu {
+					top: 40px;
+					line-height: 22px;
+
+					.title {
+						font-size: $font-size-browser-default;
+					}
+				}
+			}
+
+			.player-expand__wrapper {
+				.player-expand {
+
+					.iga-score,
+					.prod-score {
+						.score-title {
+							font-size: $font-size-browser-default;
+						}
+
+						.score--detail {
+							font-size: $font-size-browser-default;
+						}
+
+						.hexagon-wrapper {
+							.icon {
+								width: 50px;
+								height: 50px;
+							}
+
+							.text {
+								font-size: $font-size-lg;
+							}
+						}
+
+						.progress-bar__wrapper {
+							.title {
+								font-size: $font-size-sm;
+							}
+
+							.progress-info {
+								.title {
+									font-size: $font-size-sm;
+								}
+
+								.score {
+									font-size: $font-size-sm;
+
+									span {
+										font-size: $font-size-sm;
+									}
+								}
+							}
+						}
+					}
+
+					.ra-score {
+						.title {
+							font-size: $font-size-browser-default;
+						}
+
+						span {
+							font-size: $font-size-browser-default;
+						}
+
+						.score {
+							width: 33px;
+							height: 33px;
+
+							span {
+								font-size: $font-size-sm;
+							}
+						}
+
+						.frame {
+							.frame-item {
+								width: 60px;
+							}
+						}
+
+						.compare-title {
+							font-size: $font-size-sm;
+						}
+
+						.compare-btn {
+							width: 150px;
+							height: 42px;
+							font-size: $font-size-sm;
+						}
+					}
+				}
+			}
+		}
+
+		&.share-prospect {
+			.table-head {
+				.table-row {
+					height: 50px;
+				}
+			}
+
+			.table-body {
+				.table-row {
+					height: 50px;
+				}
+			}
+		}
+	}
+
+	// modal
+	.modal {
+		&.player-compare {
+			.modal__body {
+				.player-info {
+					.score {
+						font-size: 1.875rem;
+						line-height: 35px;
+					}
+
+					.igascore-title {
+						font-size: $font-size-xl;
+					}
+
+					.player-name {
+						font-size: 1.875rem;
+					}
+
+					.player-position {
+						font-size: 1.875rem;
+					}
+				}
+
+				.comparison-details {
+					.comparision-items {
+						.compare-number {
+							font-size: $font-size-lg;
+						}
+
+						.player-title {
+							font-size: $font-size-xl;
+						}
+					}
+				}
+			}
+		}
+
+		&.multi-compare {
+			.modal__body {
+				.searchbar {
+					.searchbar-field {
+						.search--icon {
+							top: 15px;
+						}
+					}
+				}
+			}
+		}
+
+		&.backlog {
+			.modal__body {
+				.searchbar {
+					.searchbar-field {
+						.search--icon {
+							top: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.select-player-dropdown {
+		.select-field {
+			height: 45px;
+		}
+	}
+
+	.select-player-slider {
+		.filter-input {
+			height: 45px;
+		}
+
+		.range-slider-wrapper {
+			top: 55px;
+		}
+	}
+
+	// player profile
+	.player-profile__section {
+		.personal-section {
+			.info-wrapper {
+				.score-details {
+					@include paddingLeft(40px);
+				}
+
+				.score-item {
+					.score-item-title {
+						font-size: $font-size-lg;
+					}
+
+					.text {
+						font-size: 1.375rem;
+					}
+				}
+
+				.iga-score_wrapper,
+				.kpi_wrapper,
+				.player-tag_wrapper {
+					@include marginBottom(40px);
+				}
+
+				.iga-score_wrapper,
+				.player-tag_wrapper,
+				.player-id {
+					&-title {
+						font-size: $font-size-xxl;
+					}
+				}
+
+				.player-avatar {
+					width: 220px;
+					height: 220px;
+				}
+
+				.player-name {
+					font-size: 1.875rem;
+				}
+
+				.bio {
+					.bio-field {
+						.bio-title {
+							font-size: $font-size-sm;
+						}
+
+						.bio-value {
+							font-size: $font-size-xxl;
+						}
+					}
+				}
+
+				.add-tag {
+					width: 28px;
+					height: 28px;
+					@include marginLeft(15px);
+
+					.icon {
+						width: 13px;
+						height: 13px;
+					}
+				}
+
+				.hexagon-wrapper {
+					.icon {
+						width: 50px;
+						height: 50px;
+					}
+
+					.text {
+						color: $white;
+					}
+				}
+
+				.tag-btn {
+					height: 28px;
+					font-size: $font-size-sm;
+				}
+			}
+
+			.action-wrapper {
+				@include padding(27px);
+
+				.actions {
+					.action-item {
+						width: 40px;
+						height: 40px;
+
+						.count {
+							width: 18px;
+							height: 18px;
+							right: -4px;
+						}
+
+						.icon {
+							width: 20px;
+							height: 20px;
+
+							&.quick--icon {
+								width: 24px;
+								height: 24px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.details-section {
+			@include marginTop(50px);
+
+			.left-section {
+
+				.ranking-section,
+				.big-scores-section,
+				.combine-section,
+				.evaluation-section,
+				.quick-note-section {
+					@include padding(15px);
+
+					.collapse-box-wrapper {
+						.collapse-title {
+							font-size: 1.375rem;
+						}
+
+						.collapse-arrow {
+							width: 40px;
+							min-width: 40px;
+							height: 40px;
+						}
+					}
+				}
+
+				.big-scores-section,
+				.combine-section,
+				.evaluation-section,
+				.quick-note-section {
+					@include marginTop(20px);
+				}
+
+				.ranking-section {
+					.rank-wrapper {
+						.rank-item {
+							.rank-badge {
+								width: 65px;
+							}
+
+							.title {
+								.state {
+									font-size: 1.25rem;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.right-section {
+				.player-video-section {
+					.clip-wrapper {
+						.clip-video {
+							width: 50%;
+						}
+
+						.clip-details {
+							width: 50%;
+
+							.video-title {
+								font-size: 1.375rem;
+							}
+
+							.video-info {
+								font-size: $font-size-sm;
+							}
+
+							.video-label {
+								font-size: $font-size-browser-default;
+
+								.video-text {
+									font-size: $font-size-lg;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// card
+	.card {
+		@include margin(8px);
+
+		&.player-card {
+			flex: 0 0 calc(33% - 16px);
+		}
+
+		&.shortlist-card {
+			width: calc(33% - 16px);
+		}
+
+		&.dashboard-card {
+			width: calc(50% - 20px);
+		}
+
+		.kpi-scores {
+			.score-info {
+				@include padding(8px);
+			}
+		}
+
+		.player-profile {
+			height: 50px;
+			width: 50px;
+		}
+
+		.player-name {
+			font-size: $font-size-xxl;
+		}
+
+		.player-position {
+			font-size: $font-size-xxl;
+		}
+
+		.down-icon {
+			height: 38px;
+			width: 38px;
+
+			svg {
+				height: 10px;
+			}
+		}
+	}
+
+	// round icon
+	.round-icon {
+		width: 44px;
+		height: 44px;
+
+		&.action-icon {
+			height: 38px;
+			width: 38px;
+		}
+	}
+
+	// recruiting dashboard
+	.recruiting-dashboard {
+		.dashboard-section {
+			.search-dashboard {
+				align-items: flex-start;
+
+				.searchbar {
+					flex-direction: column;
+					align-items: flex-start;
+
+					.searchbar-label {
+						@include marginBottom(20px);
+					}
+				}
+			}
+		}
+	}
+
+	// multi player comparison
+	.score-detail {
+		height: 50px;
+	}
+
+	.compare-fame {
+		.compare-profile {
+			.text-info {
+				font-size: $font-size-sm;
+			}
+
+			.plus-icon {
+				height: 40px;
+				width: 40px;
+			}
+		}
+
+		.edit-player {
+			height: 27px;
+			width: 27px;
+			top: -2px;
+			right: -2px;
+		}
+	}
+
+	//admin home page
+	.admin-home_page {
+		.stack-wrapper {
+			.stack {
+				width: calc(33.33% - 16px);
+				height: calc(39vh - 8px);
+				@include margin(8px);
+
+				.stack-title {
+					font-size: 1.5rem;
+				}
+
+				.icon {
+					@include margin(20px 0);
+				}
+
+				.stack-description {
+					font-size: $font-size-sm;
+				}
+			}
+		}
+	}
+
+	//admin
+	.admin-wrapper {
+		.filter-section {
+			.team-filter {
+				width: 25%;
+			}
+		}
+
+		.admin-form {
+			@include marginTop(50px);
+
+			.form_section {
+				@include padding(20px);
+			}
+		}
+
+		.address-book_wrapper {
+			@include marginTop(35px);
+
+			.my-book_list {
+				@include marginRight(15px);
+			}
+
+			.edge-book_list {
+				@include marginLeft(15px);
+			}
+		}
+	}
+
+	// admin player expand
+	.section-expand {
+		.expand-title {
+			font-size: $font-size-browser-default;
+		}
+	}
+
+	.admin-player-expand {
+		.bio-field {
+			.bio-title {
+				font-size: $font-size-sm;
+			}
+
+			.bio-value {
+				font-size: $font-size-browser-default;
+			}
+		}
+	}
+
+	.app-link {
+		width: 17px;
+		height: 17px;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+
+	// page wrapper
+	.page-wrapper {
+		@include marginTop(70px);
+		@include padding(20px 25px);
+	}
+
+	// header section
+	.header {
+		height: 70px;
+
+		.header-logo {
+			height: 50px;
+			min-height: 50px;
+			@include marginLeft(20px);
+		}
+
+		.tab-header {
+			.tab-menu__wrapper {
+				.tab-menu {
+					height: 35px;
+					@include padding(0 8px);
+					font-size: $font-size-xs;
+				}
+
+				.tab-sub_menu__wrapper {
+					@include padding(0 8px);
+					top: 45px;
+
+					.tab-sub_menu {
+						@include margin(7px 0);
+						font-size: $font-size-xs;
+					}
+				}
+			}
+		}
+
+		.header-actions {
+			@include marginRight(20px);
+
+			.round-wrapper {
+				width: 35px;
+				height: 35px;
+
+				.notification--count {
+					width: 20px;
+					height: 20px;
+					font-size: 0.625rem;
+				}
+			}
+
+			.coach-title {
+				font-size: $font-size-xs;
+			}
+		}
+	}
+
+	// home screen
+	.landingpage-wrapper {
+		.langing-page_header {
+			.logo-image {
+				width: 180px;
+			}
+		}
+
+		.text-wrapper {
+			.text-highlight {
+				.title {
+					font-size: 3.438rem;
+				}
+			}
+		}
+
+		.feature-wrapper {
+			.feature-list_item {
+				font-size: $font-size-browser-default;
+			}
+		}
+	}
+
+	// searchbar
+	.searchbar {
+		.searchbar-field {
+			.search--icon {
+				width: 16px;
+				height: 16px;
+			}
+		}
+	}
+
+	// select field
+	.select-field_wrapper {
+		.select-title {
+			font-size: $font-size-sm;
+		}
+
+		.select-field {
+			height: 45px;
+			font-size: $font-size-sm;
+		}
+	}
+
+	// input field
+	.input-field_wrapper {
+		.input-title {
+			font-size: $font-size-sm;
+		}
+
+		.input-field {
+			min-height: 45px;
+			font-size: $font-size-sm;
+		}
+
+		// telephone field
+		.react-tel-input {
+			.form-control {
+				min-height: 45px;
+			}
+		}
+	}
+
+	// phone input field
+	.phone-field_wrapper {
+		.phone-title {
+			font-size: $font-size-sm;
+		}
+
+		.PhoneInputInput,
+		.PhoneInputCountry {
+			min-height: 45px;
+			font-size: $font-size-sm;
+		}
+
+		.PhoneInputCountryIcon--border {
+			width: 16px;
+			height: 16px;
+			box-shadow: none;
+		}
+	}
+
+	// document field
+	.document-field_wrapper {
+		.document-title {
+			font-size: $font-size-sm;
+		}
+
+		.document-field {
+			min-height: 45px;
+		}
+	}
+
+	// teaxt area field
+	.text-area_wrapper {
+		.text-area-title {
+			font-size: $font-size-sm;
+		}
+	}
+
+	// conversion unit
+	.conversion-unit_wrapper {
+		.conversion-unit {
+			height: 43px;
+			width: 127px;
+			font-size: $font-size-sm;
+		}
+	}
+
+	// card
+	.card {
+		&.player-card {
+			flex: 0 0 calc(50% - 24px);
+		}
+
+		&.shortlist-card {
+			width: calc(50% - 24px);
+		}
+
+		&.dashboard-card {
+			width: calc(100% - 28px);
+		}
+
+		&.shortlist-player {
+			.info {
+				.info-title {
+					font-size: $font-size-sm;
+				}
+
+				.info-name {
+					font-size: $font-size-lg;
+				}
+			}
+		}
+	}
+
+	// collapse box
+	.collapse-box-wrapper {
+		.collapse-arrow {
+			width: 34px;
+			min-width: 34px;
+			height: 34px;
+		}
+
+		.collapse-title {
+			font-size: $font-size-lg;
+		}
+	}
+
+	// cover frame
+	.cover-frame {
+		height: calc(100vh - 20px);
+
+		.cover-title {
+			@include margin(20px 0);
+			font-size: 1.5625rem;
+		}
+	}
+
+	// table wrapper
+	.table-wrapper {
+		overflow-x: auto;
+
+		&.no-x--scrolling {
+			overflow-x: unset;
+		}
+
+		&::-webkit-scrollbar {
+			height: 3px;
+		}
+	}
+
+	// table
+	.table {
+		width: max-content;
+
+		&.no-x--scrolling {
+			width: 100%;
+		}
+
+		.table-head {
+			&.table-sticky--header {
+				top: 0;
+			}
+
+			.table-row {
+				height: 65px;
+
+				.table-cell__header {
+					@include padding(0 10px);
+				}
+			}
+		}
+
+		.table-body {
+			.table-row {
+				height: 65px;
+
+				.hr {
+					height: 35px;
+				}
+
+				.color-line {
+					height: 35px;
+				}
+
+				.table-cell {
+					@include padding(0 10px);
+
+					&.pinned {
+						.pinned-box {
+							height: 65px;
+
+							.pinned-box--text {
+								height: 65px;
+
+								p {
+									font-size: $font-size-lg;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// btn
+	.btn {
+		font-size: $font-size-sm;
+		width: 180px;
+
+		&--width {
+			width: auto;
+		}
+	}
+
+	// comparison modal
+	.modal {
+		&.player-compare {
+			.modal__body {
+				.player-info {
+					.score {
+						font-size: $font-size-xxl;
+
+						span {
+							font-size: $font-size-xxs;
+						}
+					}
+
+					.igascore-title {
+						font-size: $font-size-lg;
+					}
+
+					.player-name {
+						font-size: 1.5625rem;
+					}
+
+					.player-position {
+						font-size: 1.5625rem;
+					}
+
+					.player-details {
+						.player-score {
+							width: 35%;
+
+							.player-igascore {
+								@include marginBottom(10px);
+								@include padding(0 0 15px);
+							}
+						}
+
+						.player-profile {
+							width: 65%;
+						}
+					}
+
+					.healmate-image {
+						height: 45px;
+						width: 45px;
+					}
+				}
+
+				.comparison-details {
+					.comparison-items {
+						.compare-number {
+							font-size: $font-size-sm;
+						}
+
+						.player-title {
+							font-size: $font-size-sm;
+						}
+
+						.dropable-arrow {
+							.down-arrow-compare {
+								height: 15px;
+								width: 15px;
+								top: -17px;
+								right: -23px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// player profile
+	.player-profile__section {
+		.personal-section {
+			.info-wrapper {
+				@include marginBottom(30px);
+
+				.score-details {
+					@include paddingLeft(30px);
+				}
+
+				.iga-score_wrapper,
+				.kpi_wrapper,
+				.player-tag_wrapper {
+					@include marginBottom(35px);
+				}
+
+				.iga-score_wrapper,
+				.player-tag_wrapper,
+				.player-id {
+					&-title {
+						font-size: $font-size-lg;
+					}
+				}
+
+				.player-avatar {
+					width: 190px;
+					height: 190px;
+				}
+
+				.player-name {
+					font-size: 1.5625rem;
+				}
+
+				.player-position {
+					font-size: $font-size-xxl;
+				}
+
+				.bio {
+					.bio-field {
+						.bio-value {
+							font-size: $font-size-lg;
+						}
+					}
+				}
+			}
+
+			.action-wrapper {
+				.select-field_wrapper {
+					max-width: 230px;
+				}
+			}
+		}
+
+		.details-section {
+			@include marginTop(30px);
+
+			.left-section {
+				.ranking-section {
+					.rank-wrapper {
+						.rank-item {
+							.rank-badge {
+								width: 55px;
+							}
+
+							.title {
+								.state {
+									font-size: $font-size-lg;
+								}
+
+								.rank-position {
+									font-size: $font-size-xs;
+								}
+							}
+						}
+					}
+				}
+
+				.big-scores-section {
+					.progress-item {
+						.progress-bar__wrapper {
+							.progress-info {
+								.score {
+									font-size: 1.3125rem;
+								}
+							}
+						}
+					}
+
+					.progress-sub-item {
+						.progress-bar__wrapper {
+							.progress-info {
+								.title {
+									font-size: $font-size-sm;
+								}
+
+								.score {
+									font-size: $font-size-browser-default;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.right-section {
+				.player-video-section {
+					.title {
+						font-size: 1.375rem;
+					}
+				}
+			}
+		}
+	}
+
+	// recruiting dashboard
+	.recruiting-dashboard {
+		.dashboard-section {
+			width: 50%;
+		}
+
+		.players-section {
+			width: calc(50% - 35px);
+		}
+	}
+
+	// total players count
+	.total-players--count {
+		font-size: $font-size-browser-default;
+	}
+
+	// shortlist
+	.shortlist--title {
+		font-size: $font-size-sm;
+	}
+
+	//multi-player-comparison
+	.score-detail {
+		.score {
+			@include padding(0 15px);
+			font-size: $font-size-sm;
+
+			.score-number {
+				font-size: $font-size-xxl;
+			}
+		}
+	}
+
+	.compare-section {
+		width: 60%;
+	}
+
+	.comparison-name {
+		font-size: 1.875rem;
+	}
+
+	.compare-fame {
+		width: calc(100% - 10px);
+
+		.compare-profile {
+			.player-name {
+				font-size: $font-size-xxs;
+			}
+
+			.player-position {
+				font-size: $font-size-xxs;
+			}
+
+			.text-info {
+				font-size: $font-size-xxs;
+			}
+
+			.plus-icon {
+				height: 30px;
+				width: 30px;
+			}
+		}
+
+		.edit-player {
+			height: 20px;
+			width: 20px;
+			top: 0px;
+			right: 0px;
+		}
+	}
+
+	.compare-table-info {
+		.title {
+			font-size: $font-size-browser-default;
+		}
+
+		.info {
+			font-size: $font-size-sm;
+		}
+	}
+
+	.compare-players {
+		width: 40%;
+	}
+
+	// modal
+	.modal {
+		&.multi-compare {
+			.modal__body {
+				max-width: 470px;
+
+				.searchbar {
+					.searchbar-field {
+						width: 100%;
+
+						.search--icon {
+							top: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// admin home page
+	.admin-home_page {
+		.stack-wrapper {
+			.stack {
+				.stack-title {
+					font-size: 1.25rem;
+				}
+
+				.stack-description {
+					font-size: $font-size-xxs;
+				}
+			}
+		}
+	}
+
+	// admin team
+	.admin-wrapper {
+		.filter-section {
+			&.team-table__list {
+				align-items: flex-start;
+				flex-direction: column;
+
+				.excel-btn_section {
+					margin-top: 15px;
+					justify-content: flex-start;
+				}
+			}
+
+			.team-filter_wrapper {
+				width: 100%;
+			}
+		}
+
+		.admin-form {
+			@include marginTop(35px);
+
+			.form_section {
+				@include marginBottom(20px);
+			}
+		}
+
+		.address-book_wrapper {
+			.my-book_list {
+				@include marginRight(8px);
+			}
+
+			.edge-book_list {
+				@include marginLeft(8px);
+			}
+		}
+	}
+
+	//prospect details
+	.page-wrapper {
+		&.prospect-details {
+			.searchbar {
+				align-items: flex-start;
+
+				.action-tab {
+					flex-direction: column-reverse;
+					align-items: flex-end;
+
+					.view-prospect {
+						@include marginTop(10px);
+					}
+				}
+			}
+		}
+	}
+
+	//share prospect
+	.share-prospect {
+		.share-prospect-details {
+			flex-direction: column;
+
+			.map-section {
+				width: 100%;
+				height: 100%;
+
+				.share-map {
+					max-width: 350px;
+					margin: auto;
+					height: calc(100vh - 100%);
+				}
+			}
+
+			.details-section {
+				width: 100%;
+				@include marginTop(15px);
+
+				.address-tab {
+					@include marginBottom(15px);
+				}
+			}
+		}
+	}
+
+	.modal {
+		&.prospect-share {
+			.table-wrapper {
+				height: calc(100vh - 567px);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1024px) {
+
+	// player profile
+	.player-profile__section {
+		.details-section {
+			.right-section {
+				.player-video-section {
+					.clip-wrapper {
+						.clip-details {
+							.video-title {
+								font-size: $font-size-lg;
+							}
+
+							.video-label {
+								font-size: $font-size-sm;
+
+								.video-text {
+									font-size: $font-size-browser-default;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+
+	// login page
+	.login {
+		.logo-wrapper {
+			margin-bottom: 30px;
+
+			.logo-item {
+				width: 150px;
+			}
+		}
+
+		.form {
+			.form-item {
+				.input-field {
+					min-height: 50px;
+				}
+
+				.password-icon {
+					top: 11px;
+				}
+			}
+
+			.checkbox {
+				margin-bottom: 35px;
+			}
+
+			.login-btn {
+				min-height: 50px;
+			}
+		}
+	}
+
+	// header
+	.header {
+		.header-logo {
+			width: 60px;
+			min-width: 60px;
+		}
+
+		.notification-wrapper {
+			width: 38px;
+			height: 35px;
+			margin-left: 15px;
+
+			.notification--count {
+				width: 18px;
+				height: 18px;
+				top: -10px;
+				right: -1px;
+				font-size: 10px;
+			}
+		}
+	}
+
+	// home screen
+	.landingpage-wrapper {
+		.langing-page_header {
+			.logo-image {
+				width: 160px;
+			}
+		}
+
+		.text-wrapper {
+			.text-highlight {
+				.title {
+					font-size: 3.125rem;
+				}
+			}
+		}
+
+		.feature-wrapper {
+			.feature-list_item {
+				font-size: $font-size-xs;
+			}
+		}
+	}
+
+	// sidebar
+	.sidebar {
+		.sidebar-menu {
+			.sidebar-list {
+				font-size: $font-size-lg;
+			}
+		}
+
+		.logout-btn {
+			height: 55px;
+			width: 180px;
+		}
+	}
+
+	// filter section
+	.filter-wrapper {
+		.filter-items {
+			width: 275px;
+			margin-right: 20px;
+
+			.filter-input {
+				height: 45px;
+			}
+
+			.select-field {
+				height: 45px;
+			}
+		}
+	}
+
+	// searchbar
+	.searchbar {
+		.searchbar-label {
+			margin-right: 12px;
+		}
+
+		.searchbar-field {
+			width: 260px;
+
+			.search--icon {
+				top: 13px;
+			}
+
+			.searchbar-input {
+				height: 45px;
+			}
+		}
+	}
+
+	// conversion unit
+	.conversion-unit_wrapper {
+		.conversion-unit {
+			width: 105px;
+		}
+	}
+
+	// btn
+	.btn {
+		height: 40px;
+		width: 171px;
+
+		&--width {
+			width: auto;
+		}
+	}
+
+	// comparison modal
+	.modal {
+		&.player-compare {
+			.modal__body {
+				.player-info {
+					.score {
+						line-height: 20px;
+					}
+
+					.player-name {
+						font-size: $font-size-lg;
+					}
+
+					.player-position {
+						font-size: $font-size-lg;
+					}
+
+					.player-details {
+						.player-profile {
+							width: 60%;
+						}
+
+						.player-igascore {
+							margin-bottom: 20px;
+						}
+
+						.player-score {
+							width: 40%;
+
+							.logo-healmate {
+								height: 40px;
+								width: 40px;
+							}
+						}
+					}
+
+					.player-raprod-score {
+						margin-top: 0px;
+					}
+
+					.igascore-title {
+						font-size: $font-size-xs;
+					}
+				}
+			}
+		}
+	}
+
+	.select-player-dropdown {
+		.select-field {
+			height: 40px;
+		}
+	}
+
+	.select-player-slider {
+		.filter-input {
+			height: 40px;
+		}
+
+		.range-slider-wrapper {
+			top: 50px;
+		}
+	}
+
+	// player profile
+	.player-profile__section {
+		.personal-section {
+			.info-wrapper {
+				@include marginBottom(30px);
+
+				.score-details {
+					@include paddingLeft(30px);
+				}
+
+				.player-logo-info {
+					.player-avatar {
+						height: 160px;
+						width: 160px;
+					}
+				}
+
+				.bio-info {
+					.bio {
+						.bio-field {
+							width: calc(46% - 15px);
+							@include margin(0 25px 25px 0);
+						}
+					}
+				}
+			}
+		}
+
+		.details-section {
+			flex-direction: column;
+
+			.left-section {
+				width: 100%;
+
+				.ranking-section,
+				.big-scores-section,
+				.combine-section,
+				.evaluation-section,
+				.quick-note-section {
+					@include padding(15px);
+				}
+			}
+
+			.right-section {
+				width: 100%;
+
+				.player-video-section {
+					@include margin(20px 0 0);
+
+					.clip-wrapper {
+						height: 250px;
+					}
+				}
+			}
+		}
+	}
+
+	// multi player comparison
+	.score-detail {
+		height: 45px;
+
+		.score {
+			font-size: $font-size-xs;
+
+			.score-number {
+				font-size: $font-size-lg;
+			}
+		}
+	}
+
+	// multi player comparison
+	.compare-fame {
+		.compare-profile {
+			.player-name {
+				@include marginBottom(5px);
+			}
+		}
+
+		.edit-player {
+			height: 16px;
+			width: 16px;
+
+			.icon {
+				width: 20px;
+			}
+		}
+	}
+}
